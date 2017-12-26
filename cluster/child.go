@@ -3,12 +3,12 @@ package cluster
 import (
 	"errors"
 	"fmt"
-	"github.com/viphxin/xingo/iface"
-	"github.com/viphxin/xingo/logger"
+	"github.com/zllangct/zgo/iface"
+	"github.com/zllangct/zgo/logger"
 	"math/rand"
 	"strings"
 	"sync"
-	"github.com/viphxin/xingo/pool"
+	"github.com/zllangct/zgo/pool"
 )
 
 type Child struct {

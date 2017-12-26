@@ -2,9 +2,9 @@ package utils
 
 import (
 	"encoding/json"
-	"github.com/viphxin/xingo/iface"
-	"github.com/viphxin/xingo/logger"
-	"github.com/viphxin/xingo/timer"
+	"github.com/zllangct/zgo/iface"
+	"github.com/zllangct/zgo/logger"
+	"github.com/zllangct/zgo/timer"
 	"io/ioutil"
 	"os"
 	"strconv"

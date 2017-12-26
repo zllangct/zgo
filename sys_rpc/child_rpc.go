@@ -2,11 +2,11 @@ package sys_rpc
 
 import (
 	"fmt"
-	"github.com/viphxin/xingo/cluster"
-	"github.com/viphxin/xingo/clusterserver"
-	"github.com/viphxin/xingo/logger"
+	"github.com/zllangct/zgo/cluster"
+	"github.com/zllangct/zgo/clusterserver"
+	"github.com/zllangct/zgo/logger"
 	"time"
-	"github.com/viphxin/xingo/utils"
+	"github.com/zllangct/zgo/utils"
 	"os"
 )
 

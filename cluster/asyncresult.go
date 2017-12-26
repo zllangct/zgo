@@ -3,8 +3,8 @@ package cluster
 import (
 	"errors"
 	"fmt"
-	"github.com/viphxin/xingo/logger"
-	"github.com/viphxin/xingo/utils"
+	"github.com/zllangct/zgo/logger"
+	"github.com/zllangct/zgo/utils"
 	_ "os"
 	"sync"
 	"time"

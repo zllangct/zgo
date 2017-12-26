@@ -2,11 +2,11 @@ package fserver
 
 import (
 	"fmt"
-	"github.com/viphxin/xingo/fnet"
-	"github.com/viphxin/xingo/iface"
-	"github.com/viphxin/xingo/logger"
-	"github.com/viphxin/xingo/timer"
-	"github.com/viphxin/xingo/utils"
+	"github.com/zllangct/zgo/fnet"
+	"github.com/zllangct/zgo/iface"
+	"github.com/zllangct/zgo/logger"
+	"github.com/zllangct/zgo/timer"
+	"github.com/zllangct/zgo/utils"
 	"net"
 	"os"
 	"os/signal"

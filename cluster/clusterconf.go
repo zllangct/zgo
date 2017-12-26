@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"io/ioutil"
-	"github.com/viphxin/xingo/logger"
+	"github.com/zllangct/zgo/logger"
 )
 
 var cfgpath string

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 	"time"
-	"github.com/viphxin/xingo/iface"
+	"github.com/zllangct/zgo/iface"
 )
 
 //PoolConfig 连接池相关配置

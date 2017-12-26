@@ -2,11 +2,11 @@ package clusterserver
 
 import (
 	"fmt"
-	"github.com/viphxin/xingo/cluster"
-	"github.com/viphxin/xingo/fserver"
-	"github.com/viphxin/xingo/iface"
-	"github.com/viphxin/xingo/logger"
-	"github.com/viphxin/xingo/utils"
+	"github.com/zllangct/zgo/cluster"
+	"github.com/zllangct/zgo/fserver"
+	"github.com/zllangct/zgo/iface"
+	"github.com/zllangct/zgo/logger"
+	"github.com/zllangct/zgo/utils"
 	"sync"
 )
 

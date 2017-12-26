@@ -1,7 +1,7 @@
 package timer
 
 import (
-	"github.com/viphxin/xingo/logger"
+	"github.com/zllangct/zgo/logger"
 	"sync"
 	"time"
 	"math"

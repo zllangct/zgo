@@ -1,9 +1,9 @@
 package sys_rpc
 
 import (
-	"github.com/viphxin/xingo/cluster"
-	"github.com/viphxin/xingo/clusterserver"
-	"github.com/viphxin/xingo/logger"
+	"github.com/zllangct/zgo/cluster"
+	"github.com/zllangct/zgo/clusterserver"
+	"github.com/zllangct/zgo/logger"
 )
 
 type MasterRpc struct {

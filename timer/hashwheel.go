@@ -2,7 +2,7 @@ package timer
 
 import (
 	"sync"
-	"github.com/viphxin/xingo/logger"
+	"github.com/zllangct/zgo/logger"
 	"fmt"
 	"time"
 	"errors"

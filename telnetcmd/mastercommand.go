@@ -2,7 +2,7 @@ package telnetcmd
 
 import (
 	"fmt"
-	"github.com/viphxin/xingo/clusterserver"
+	"github.com/zllangct/zgo/clusterserver"
 	"strconv"
 )
 

@@ -1,17 +1,17 @@
 package xingo
 
 import (
-	_ "github.com/viphxin/xingo/fnet"
-	_ "github.com/viphxin/xingo/timer"
-	"github.com/viphxin/xingo/telnetcmd"
-	"github.com/viphxin/xingo/clusterserver"
-	"github.com/viphxin/xingo/sys_rpc"
-	"github.com/viphxin/xingo/utils"
-	"github.com/viphxin/xingo/fserver"
-	"github.com/viphxin/xingo/cluster"
-	"github.com/viphxin/xingo/logger"
+	_ "github.com/zllangct/zgo/fnet"
+	_ "github.com/zllangct/zgo/timer"
+	"github.com/zllangct/zgo/telnetcmd"
+	"github.com/zllangct/zgo/clusterserver"
+	"github.com/zllangct/zgo/sys_rpc"
+	"github.com/zllangct/zgo/utils"
+	"github.com/zllangct/zgo/fserver"
+	"github.com/zllangct/zgo/cluster"
+	"github.com/zllangct/zgo/logger"
 	"fmt"
-	"github.com/viphxin/xingo/iface"
+	"github.com/zllangct/zgo/iface"
 )
 
 func NewXingoTcpServer() iface.Iserver{

@@ -1,8 +1,8 @@
 package cluster
 
 import (
-	"github.com/viphxin/xingo/iface"
-	"github.com/viphxin/xingo/logger"
+	"github.com/zllangct/zgo/iface"
+	"github.com/zllangct/zgo/logger"
 	"strings"
 	"fmt"
 )

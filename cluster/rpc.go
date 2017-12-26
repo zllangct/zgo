@@ -1,12 +1,12 @@
 package cluster
 
 import (
-	"github.com/viphxin/xingo/iface"
-	"github.com/viphxin/xingo/logger"
-	"github.com/viphxin/xingo/utils"
+	"github.com/zllangct/zgo/iface"
+	"github.com/zllangct/zgo/logger"
+	"github.com/zllangct/zgo/utils"
 	"time"
-	"github.com/viphxin/xingo/pool"
-	"github.com/viphxin/xingo/fnet"
+	"github.com/zllangct/zgo/pool"
+	"github.com/zllangct/zgo/fnet"
 	"net"
 	"fmt"
 )

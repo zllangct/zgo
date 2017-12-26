@@ -1,13 +1,13 @@
 package cluster
 
 import (
-	"github.com/viphxin/xingo/iface"
-	"github.com/viphxin/xingo/logger"
+	"github.com/zllangct/zgo/iface"
+	"github.com/zllangct/zgo/logger"
 	"fmt"
 	"time"
 	"bufio"
 	"strings"
-	"github.com/viphxin/xingo/utils"
+	"github.com/zllangct/zgo/utils"
 )
 /*
 debug tool protocol

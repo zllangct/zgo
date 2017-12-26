@@ -2,7 +2,7 @@ package pool
 
 import (
 	"errors"
-	"github.com/viphxin/xingo/iface"
+	"github.com/zllangct/zgo/iface"
 )
 
 var (
