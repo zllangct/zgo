@@ -1,5 +1,5 @@
 # xingo_cluster
-
+本仓库是xingo的一个分支,基于xingo的定制版本.
 xingo golang游戏开发交流群：535378240<br>
 文档地址: http://www.runingman.net/
 ```text
