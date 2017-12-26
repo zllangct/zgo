@@ -1,4 +1,4 @@
-package xingo
+package zgo
 
 import (
 	_ "github.com/zllangct/zgo/fnet"
