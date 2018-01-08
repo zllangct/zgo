@@ -145,6 +145,24 @@ func (this *XingoRpc)ConnBack(conn iface.IWriter)error{
 	return  nil
 }
 
+func (this *XingoRpc) CallRpcNotForResultArray(target string, args []interface{}) error {
+	rpcdata := &RpcData{
+		MsgType: REQUEST_NORESULT,
+		Target:  target,
+		Args:    args,
+	}
+	rpcpackege, err := utils.GlobalObject.RpcCProtoc.GetDataPack().Pack(0, rpcdata)
+
+	if err == nil {
+		conn:=this.GetOneConn()
+		conn.Send(rpcpackege)
+		this.ConnBack(conn)
+		return nil
+	} else {
+		logger.Error(err)
+		return err
+	}
+}
 func (this *XingoRpc) CallRpcNotForResult(target string, args ...interface{}) error {
 	rpcdata := &RpcData{
 		MsgType: REQUEST_NORESULT,
@@ -165,6 +183,32 @@ func (this *XingoRpc) CallRpcNotForResult(target string, args ...interface{}) er
 }
 
 func (this *XingoRpc) CallRpcForResult(target string, args ...interface{}) (*RpcData, error) {
+	asyncR := this.asyncResultMgr.Add()
+	rpcdata := &RpcData{
+		MsgType: REQUEST_FORRESULT,
+		Key:     asyncR.GetKey(),
+		Target:  target,
+		Args:    args,
+	}
+	rpcpackege, err := utils.GlobalObject.RpcCProtoc.GetDataPack().Pack(0, rpcdata)
+	if err == nil {
+		conn:=this.GetOneConn()
+		conn.Send(rpcpackege)
+		this.ConnBack(conn)
+		resp, err := asyncR.GetResult(3 * time.Second)
+		if err == nil {
+			return resp, nil
+		} else {
+			//超时了 或者其他原因结果没等到
+			this.asyncResultMgr.Remove(asyncR.GetKey())
+			return nil, err
+		}
+	} else {
+		logger.Error(err)
+		return nil, err
+	}
+}
+func (this *XingoRpc) CallRpcForResultArray(target string, args []interface{}) (*RpcData, error) {
 	asyncR := this.asyncResultMgr.Add()
 	rpcdata := &RpcData{
 		MsgType: REQUEST_FORRESULT,

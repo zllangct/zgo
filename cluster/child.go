@@ -82,8 +82,16 @@ func (this *Child) CallChildNotForResult(target string, args ...interface{}) err
 	return this.rpc.CallRpcNotForResult(target, args...)
 }
 
+func (this *Child) CallNotForResArray(target string, args []interface{}) error {
+	return this.rpc.CallRpcNotForResultArray(target, args)
+}
+
 func (this *Child) CallChildForResult(target string, args ...interface{}) (*RpcData, error) {
 	return this.rpc.CallRpcForResult(target, args...)
+}
+
+func (this *Child) CallForResArray(target string, args []interface{}) (*RpcData, error) {
+	return this.rpc.CallRpcForResultArray(target, args)
 }
 
 type ChildMgr struct {
