@@ -65,6 +65,9 @@ type GlobalObj struct {
 	MysqlIP           string
 	RedisIP           string
 	RedisPasswd       string
+	ExploitsOnePageCount int64
+	RedisDB1			int
+	ClientVersion     string
 }
 
 func (this *GlobalObj) GetFrequency() (int, string) {
@@ -146,6 +149,9 @@ func init() {
 		OnChildNodeDisconnected: func(name string, fconn iface.IWriter) {},
 		ProcessSignalChan:       make(chan os.Signal, 1),
 		RoomMaxPlayer:           20000,
+		ExploitsOnePageCount :   20,
+		RedisDB1:				2,
+		ClientVersion:          "0.0.1",
 	}
 	GlobalObject.Reload()
 }

@@ -65,7 +65,7 @@ func (this *TelnetProtocol) OnConnectionLost(fconn iface.Iconnection) {
 
 func (this *TelnetProtocol) StartReadThread(fconn iface.Iconnection) {
 	logger.Info("start receive data from telnet socket...")
-	fconn.GetConnection().Write([]byte(fmt.Sprintf("-------welcome to xingo telnet tool(node: %s)---------\r\n", utils.GlobalObject.Name)))
+	fconn.GetConnection().Write([]byte(fmt.Sprintf("-------welcome to zgo telnet tool(node: %s)---------\r\n", utils.GlobalObject.Name)))
 	for {
 		if err := fconn.GetConnection().SetReadDeadline(time.Now().Add(time.Minute*3)); err != nil {
 			logger.Error("telnet connection SetReadDeadline error: ", err)
