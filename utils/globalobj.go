@@ -66,6 +66,7 @@ type GlobalObj struct {
 	RedisIP           string
 	RedisPasswd       string
 	ExploitsOnePageCount int64
+	ExploitsMaxPageCount int64
 	RedisDB1			int
 	ClientVersion     map[string]string
 }
@@ -150,6 +151,7 @@ func init() {
 		ProcessSignalChan:       make(chan os.Signal, 1),
 		RoomMaxPlayer:           20000,
 		ExploitsOnePageCount :   20,
+		ExploitsMaxPageCount : 10,
 		RedisDB1:				2,
 		ClientVersion:          map[string]string{},
 	}
